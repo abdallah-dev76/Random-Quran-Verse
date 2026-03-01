@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Kufi;
+  src: url("./fonts/NotoKufiArabic-Medium.ttf");
+}
+/*****/
+/* Global Component */
+/*****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kufi, sans-serif, "Times New Roman", Times, serif;
+}
+.blur-effect {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+/*****/
+/* Animation */
+/*****/
+@keyframes fade-in-ayah {
+  0% {
+    transform: translate(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-ayah-name {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+/*****/
+/* Background Body*/
+/*****/
+body {
+  background-image: url("../images/background-4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+/*****/
+/* Main Section */
+/*****/
+.ayah {
+  height: fit-content;
+  max-height: 200px;
+  line-height: 70px;
+  overflow: auto;
+  padding: 8px;
+  font-size: 2rem;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.ayah.active {
+  animation: fade-in-ayah 1s;
+}
+.ayah-name.active {
+  animation: fade-in-ayah-name 1s;
+}
+.ayah-name {
+  margin: 0;
+  width: fit-content;
+  margin-left: auto;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .ayah {
+    font-size: 1.5rem;
+    line-height: 60px;
+  }
+  .ayah-name {
+    font-size: 1rem;
+  }
+}
+.copyright {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s;
+}
+.copyright:hover {
+  color: #198754;
+}

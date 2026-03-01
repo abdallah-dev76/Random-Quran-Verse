@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Quran Verse</title>
+    <meta charset="UTF-8" />
+    <meta name="author" name="Abdallah Ahmed" />
+    <meta
+      name="description"
+      name="A Website To Get A Random Quran Verse For You."
+    />
+    <meta name="keywords" content="quran, islam, verse, ayah, surah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/quran.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Choose A Surah -->
+    <section class="container main">
+      <div class="row justify-content-center mx-1 py-5">
+        <div class="text-center d-flex flex-column justify-content-between">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+              <div class="px-2 py-4 rounded blur-effect">
+                <h1 class="display-4 text-white">Random Quran Verse</h1>
+                <button class="btn btn-lg btn-success mt-3 px-5 start">
+                  Start
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-4">
+            <div class="display-4 text-white mt-5 rounded ayah"></div>
+            <div class="text-white display-6 d-flex">
+              <span class="ayah-name"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
