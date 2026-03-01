@@ -34,7 +34,6 @@ Here's a short 10-second clip showing the app in action:
 1. Open the app in your browser.  
 2. Press the **Start** button.  
 3. Enjoy a new random verse every time.  
-4. Switch between themes to change the look and feel.
 
 
 ## 📂 License
